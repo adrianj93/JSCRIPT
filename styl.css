@@ -90,6 +90,14 @@ h2 small {
   display:block; 
 }
 
+.act{
+    font-weight: bold;
+}
+
+.normal{
+    font-weight: normal;
+}
+
 input 				{
   font-size:18px;
   padding:7px 7px 7px 5px;

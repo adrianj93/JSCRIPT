@@ -7,33 +7,52 @@
           <link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">
           <link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
         
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+            <script src="js/ee.js"></script>
+            <script src="js/utils.js"></script>
+            <script src="js/store.js"></script>
+
+
+        
+            <script src="js/inputView.js"></script>
+            <script src="js/listView.js"></script>
+            <script src="js/footerView.js"></script>
+        
+            <script src="js/InputCtrl.js"></script>
+            <script src="js/ListCtrl.js"></script>
+            <script src="js/FooterCtrl.js"></script>
+    
+            <script src="js/app.js"></script>
+
         
 
         <meta charset="UTF-8">
 	</head>
 	<body>
-        <h1>Lista zadań</h1>
-		<form action="">
-			  Wpisz tekst: <input id="inputview" type="text" name="textbox1">
-                <a id="btn" href="#"><div class="button raised blue">
-                      <div class="center" fit>DODAJ</div>
-                      <paper-ripple fit></paper-ripple>
-                </div></a>
-		
-		<br />
-		<ul id="listview">
-            
-		</ul> 
-		</form>
-		<footer id="footerview">
-            <h1>Statystyki</h1></br>
-			Total: <div id="totalItems">0</div></br>
-			Active: <div id="activeItems">0</div</br>
-		</footer>
-		<script src="js/ee.js"></script>
-        <script src="js/store.js"></script>
-        <script src="js/utils.js"></script>
-        <script src="js/app.js"></script>
+    <div class="wrapper"></div>
+        <div class="content">
+            <h1>Lista zadań</h1>
+            <div id="inputView">
+                  Wpisz tekst: <input type="text" id="new_task">
+                    <div id="add_task"><div class="button raised blue">
+                          <div class="center" fit>DODAJ</div>
+                          <paper-ripple fit></paper-ripple>
+                    </div></div>
+            </div>
+
+            <br />
+                <div class="tasks-list" id="listView"></div>
+
+            </form>
+            <footer class="footer" id="footerView">
+                <h1>Statystyki</h1></br>
+                Total: <div id="numberOfTasks">0</div></br>
+                Active: <div id="numberOfActive">0</div</br>
+            </footer>
+
+        </div>
+    </div>
+
 	</body>
 </html>
